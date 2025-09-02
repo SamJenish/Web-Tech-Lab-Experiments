@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Insurance Portal</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url('exp4 pic1.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 51, 102, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 50px;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+      z-index: 1000;
+    }
+
+    .navbar img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+      margin-right: auto;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      background: #ffcc00;
+      color: #003366;
+    }
+
+
+    .landing {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: top;
+      flex-direction: column;
+      padding-top: 70px; 
+      text-align: center;
+    }
+
+    .landing h1 {
+      font-size: 48px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .landing p {
+      font-size: 18px;
+      margin: 20px 0;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    /* Login Form */
+    .login-box {
+      position: absolute;
+      left: 60px;
+      top: 53%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.95);
+      color: #333;
+      padding: 30px;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #003366;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .login-box input[type="text"]:focus,
+    .login-box input[type="password"]:focus {
+      border-color: #003366;
+      outline: none;
+      box-shadow: 0px 0px 6px rgba(0,51,102,0.6);
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background: #003366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      background: #ffcc00;
+      color: #003366;
+    }
+
+    .login-box a {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <img src="exp4 pic2.jpeg" alt="Logo">
+    <div class="title">Online Insurance Portal</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Plans</a></li>
+      <li><a href="#">Claims</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </div>
+
+  <!-- Landing Content -->
+  <div class="landing">
+    <h1>Secure Your Future with Us</h1>
+    <p>Your trusted partner for health, life, and vehicle insurance. Simple, fast, and reliable services at your fingertips.</p>
+  </div>
+
+  <!-- Login Form -->
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <a href="#">Forgot Password?</a>
+    </form>
+  </div>
+</body>
+</html>
